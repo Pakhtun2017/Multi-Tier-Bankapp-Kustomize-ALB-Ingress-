@@ -1,0 +1,7 @@
+resources:
+  - bankapp-deployment.yaml
+  - bankapp-service.yaml
+  - mysql-deployment.yaml
+  - mysql-service.yaml
+  - ingress.yaml
+
