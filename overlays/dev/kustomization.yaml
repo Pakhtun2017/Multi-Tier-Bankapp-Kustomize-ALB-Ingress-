@@ -5,7 +5,7 @@ namePrefix: dev-
 
 images:
   - name: oolumee/bankapp
-    newTag: dev-42
+    newTag: dev-1
 
 patchesStrategicMerge:
   - patch-bankapp.yaml
