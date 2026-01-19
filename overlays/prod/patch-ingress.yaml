@@ -5,7 +5,7 @@ metadata:
   name: bankapp-ingress
   annotations:
     alb.ingress.kubernetes.io/load-balancer-name: bankapp-prod-alb
-    alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:us-east-1:375916767526:certificate/ff35adb3-b3a9-4828-9640-b17d2f6fd8ee
+    alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:us-east-1:375916767526:certificate/e19eb9cf-0700-425c-81f0-53262641730c
 spec:
   rules:
     - host: pashtun-verse.com
