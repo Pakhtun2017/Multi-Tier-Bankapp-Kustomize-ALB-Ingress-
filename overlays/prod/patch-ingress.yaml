@@ -4,4 +4,4 @@ metadata:
   name: bankapp-ingress
   annotations:
     alb.ingress.kubernetes.io/load-balancer-name: bankapp-prod-alb
-
+    alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:us-east-1:854669816543:certificate/1cee117a-7292-4d3d-9a5b-cb4824042da3
