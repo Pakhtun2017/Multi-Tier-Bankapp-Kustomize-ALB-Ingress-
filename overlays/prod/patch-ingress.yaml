@@ -1,12 +1,21 @@
-# overlays/prod/patch-ingress.yaml
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: bankapp-ingress
   annotations:
-    alb.ingress.kubernetes.io/load-balancer-name: bankapp-prod-alb
+    alb.ingress.kubernetes.io/listen-ports: '[{"HTTP":80},{"HTTPS":443}]'
+    alb.ingress.kubernetes.io/ssl-redirect: "443"
     alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:us-east-1:375916767526:certificate/e19eb9cf-0700-425c-81f0-53262641730c
 spec:
   rules:
-    - host: pashtun-verse.com
+    - host: dev.pashtun-verse.com
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: bankapp-service
+                port:
+                  number: 80
 
