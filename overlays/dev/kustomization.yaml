@@ -7,4 +7,4 @@ images:
 
 patchesStrategicMerge:
   - patch-bankapp.yaml
-
+  - patch-ingress.yaml
