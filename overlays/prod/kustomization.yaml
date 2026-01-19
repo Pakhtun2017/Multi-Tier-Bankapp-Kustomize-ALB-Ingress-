@@ -1,8 +1,6 @@
 resources:
   - ../../base
 
-namePrefix: prod-
-
 images:
   - name: oolumee/bankapp
     newTag: 1.2.0
