@@ -9,4 +9,13 @@ metadata:
 spec:
   rules:
     - host: dev.pashtun-verse.com
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: bankapp-service
+                port:
+                  number: 80
 
