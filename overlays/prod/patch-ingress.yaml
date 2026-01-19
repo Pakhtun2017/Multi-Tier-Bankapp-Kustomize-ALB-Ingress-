@@ -18,4 +18,14 @@ spec:
                 name: bankapp-service
                 port:
                   number: 80
+    - host: www.pashtun-verse.com
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: bankapp-service
+                port:
+                  number: 80
 
