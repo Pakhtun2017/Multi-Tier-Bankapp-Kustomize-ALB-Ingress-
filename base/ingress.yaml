@@ -1,3 +1,4 @@
+# base/ingress.yaml
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
@@ -7,12 +8,10 @@ metadata:
     alb.ingress.kubernetes.io/target-type: ip
     alb.ingress.kubernetes.io/listen-ports: '[{"HTTP":80},{"HTTPS":443}]'
     alb.ingress.kubernetes.io/ssl-redirect: "443"
-    alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:us-east-1:854669816543:certificate/1cee117a-7292-4d3d-9a5b-cb4824042da3
 spec:
   ingressClassName: alb
   rules:
-    - host: pashtun-verse.com
-      http:
+    - http:
         paths:
           - path: /
             pathType: Prefix
