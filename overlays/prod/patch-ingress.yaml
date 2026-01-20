@@ -5,7 +5,7 @@ metadata:
   annotations:
     alb.ingress.kubernetes.io/listen-ports: '[{"HTTP":80},{"HTTPS":443}]'
     alb.ingress.kubernetes.io/ssl-redirect: "443"
-    alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:us-east-1:375916767526:certificate/e19eb9cf-0700-425c-81f0-53262641730c
+    alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:us-east-1:891377192164:certificate/bab9fc8c-6d32-4052-bd32-8ee4475d77ca
 spec:
   rules:
     - host: pashtun-verse.com
