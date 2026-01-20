@@ -8,7 +8,7 @@ metadata:
     alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:us-east-1:891377192164:certificate/bab9fc8c-6d32-4052-bd32-8ee4475d77ca
     alb.ingress.kubernetes.io/target-group-attributes: >
       stickiness.enabled=true,
-      stickiness.lb_cookie.duration_seconds=172800
+      stickiness.lb_cookie.duration_seconds=172000
 spec:
   rules:
     - host: dev.pashtun-verse.com
