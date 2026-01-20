@@ -3,7 +3,7 @@ resources:
 
 images:
   - name: oolumee/bankapp
-    newTag: dev-43
+    newTag: dev-44
 
 patchesStrategicMerge:
   - patch-bankapp.yaml
