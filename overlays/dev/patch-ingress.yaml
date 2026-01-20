@@ -6,7 +6,6 @@ metadata:
     alb.ingress.kubernetes.io/listen-ports: '[{"HTTP":80},{"HTTPS":443}]'
     alb.ingress.kubernetes.io/ssl-redirect: "443"
     alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:us-east-1:891377192164:certificate/bab9fc8c-6d32-4052-bd32-8ee4475d77ca
-    # ✅ ENABLE STICKY SESSIONS (THIS IS THE KEY)
     alb.ingress.kubernetes.io/target-group-attributes: >
       stickiness.enabled=true,
       stickiness.lb_cookie.duration_seconds=172800
