@@ -5,7 +5,7 @@ metadata:
   annotations:
     alb.ingress.kubernetes.io/listen-ports: '[{"HTTP":80},{"HTTPS":443}]'
     alb.ingress.kubernetes.io/ssl-redirect: "443"
-    alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:us-east-1:891377192164:certificate/bab9fc8c-6d32-4052-bd32-8ee4475d77ca
+    alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:us-east-1:602643042585:certificate/b6ee2c32-3cf0-4e56-999b-a50188e79d5f
     alb.ingress.kubernetes.io/target-group-attributes: >
       stickiness.enabled=true,
       stickiness.lb_cookie.duration_seconds=172000
