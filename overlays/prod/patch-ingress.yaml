@@ -5,7 +5,7 @@ metadata:
   annotations:
     alb.ingress.kubernetes.io/listen-ports: '[{"HTTP":80},{"HTTPS":443}]'
     alb.ingress.kubernetes.io/ssl-redirect: "443"
-    alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:us-east-1:924609080677:certificate/91e0064f-c8ab-4f7a-9c8a-ec082755a876   
+    alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:us-east-1:583149175993:certificate/bbda8b86-f06f-4ba5-9463-25506a48d5e3   
     # ✅ ENABLE STICKY SESSIONS (THIS IS THE KEY)
     alb.ingress.kubernetes.io/target-group-attributes: >
       stickiness.enabled=true,
